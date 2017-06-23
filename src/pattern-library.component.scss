@@ -1,0 +1,52 @@
+@import '~angular-shared-scss/src/index';
+
+body {
+    font-family: sans-serif;
+    color: $cape-cod-1;
+    fill: $cape-cod-1;
+    background-color: $haze-3;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    & > .ng-isolate-scope {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 1rem;
+}
+
+.Main {
+    display: flex;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    overflow: auto;
+
+    &-left {
+        min-height: 100vh;
+        width: 50%;
+    }
+
+    &-right {
+        height: 100vh;
+        width: 50%;
+        text-align: right;
+    }
+
+    &-buttonRepeat {
+        display: flex;
+    }
+}
+
+a {
+    color: $astral-1;
+}
